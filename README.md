@@ -1,5 +1,5 @@
 # Gabriel Gigante Portifólio
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![GitHub Pages](https://img.shields.io/badge/github_pages-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://gigantedev.github.io/portfolio/)
 
 Portifólio feito baseado em um template de portifólio by Jone Don utilizando apenas HTML, CSS.
 
