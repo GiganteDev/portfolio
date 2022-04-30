@@ -32,28 +32,28 @@
 
 @font-face {
     font-family: 'Metropolis-Bold';
-    src: url('/fonts/Metropolis-Bold.otf');
+    src: url('https://gigantedev.github.io/portfolio/fonts/Metropolis-Bold.otf');
     font-weight: bold;
     font-style: bold;
 }
 
 @font-face {
     font-family: 'Metropolis-Regular';
-    src: url('/fonts/Metropolis-Regular.otf');
+    src: url('https://gigantedev.github.io/portfolio/fonts/Metropolis-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Metropolis-SemiBold';
-    src: url('/fonts/Metropolis-SemiBold.otf');
+    src: url('https://gigantedev.github.io/portfolio/fonts/Metropolis-SemiBold.otf');
     font-weight: bold;
     font-style: bold;
 }
 
 @font-face {
     font-family: 'Metropolis-Medium';
-    src: url('/fonts/Metropolis-Medium.otf');
+    src: url('https://gigantedev.github.io/portfolio/fonts/Metropolis-Medium.otf');
     font-weight: bold;
     font-style: bold;
 }
