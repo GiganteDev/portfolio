@@ -1,0 +1,348 @@
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+*, *::after, *::before {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gg-black:rgba(0, 0, 0, 1);
+    --gg-white:rgba(255, 255, 255, 1);
+    --gg-black-text:rgba(0, 0, 0, 0.85);
+    --gg-white-text:rgba(255, 255, 255, 0.95);
+    --gg-paragraph:rgba(104, 104, 104, 1);
+    --gg-purple:rgba(53, 83, 200, 1);
+}
+
+@font-face {
+    font-family: 'Metropolis-Bold';
+    src: url('/fonts/Metropolis-Bold.otf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Metropolis-Regular';
+    src: url('/fonts/Metropolis-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis-SemiBold';
+    src: url('/fonts/Metropolis-SemiBold.otf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Metropolis-Medium';
+    src: url('/fonts/Metropolis-Medium.otf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+.separator {
+    position: relative;
+    width: auto;
+    height: 2px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: var(--gg-black);
+    opacity: 0.05;
+}
+
+.separator2 {
+    width: auto;
+    height: 0px;
+    left: 101px;
+    top: 243px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 1rem 0 1rem 0;
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    -webkit-animation: scroll 10s linear infinite;
+            animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc(250px * 28);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+  
+.slider .slide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:200px;
+    max-height:80px;
+    width: auto;
+    height: auto;
+}
+
+.teste {
+    display: flex;
+}
+
+body {
+    background: var(--gg-white) ;
+    color: var(--gg-black-text);
+}
+
+a, li {
+    list-style: none;
+    text-decoration: none;
+    font-family: Metropolis-SemiBold;
+    padding: .4rem 1rem;
+    font-size: 1.2rem;
+    background: transparent;
+    border: none;
+    color: var(--gg-black-text);
+}
+
+p {
+    font-family: Metropolis-Medium;
+    font-size: 14px;
+    color: var(--gg-paragraph);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.main {
+    text-align: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.main .text {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.main h1 {
+    font-family: Metropolis-Medium;
+    font-size: 35px;
+    margin: 1rem;
+}
+
+.main span {
+    font-family: Metropolis-SemiBold;
+}
+
+.i img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.projects {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.projects .title {
+    font-family: Metropolis-Medium;
+    font-size: 26px;
+}
+
+.projects .title h1 {
+    margin: 1rem;
+}
+
+.projects img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+.projects .details {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, .4fr));
+    gap: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.projects .project {
+    padding: 2rem;
+}
+
+.projects .project p {
+    margin: 1rem;
+}
+
+.projects .project .about{
+    font-size: 18px;
+}
+
+
+.skills {
+    margin: 0 auto;
+    max-width: 80%;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.skills .title {
+    font-family: Metropolis-Medium;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills .title h1 {
+    font-size: 26px;
+    margin-bottom: 1rem;
+}
+
+.skills .skill {
+    padding: .8rem;
+}
+.skills .skill h1{
+    font-family: Metropolis-Medium;
+    font-size: 26px;
+}
+
+.skills .skill .about{
+    font-size: 18px;
+}
+
+.touchme {
+    margin: 0 auto;
+    max-width: 80%;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    font-family: Metropolis-Medium;
+}
+
+.touchme .gettouch h1 {
+    font-size: 26px;
+    margin-bottom: 1rem;
+}
+
+.touchme .gettouch .contact {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+}
+
+.touchme .gettouch p {
+    max-width: 28rem;
+    margin-top: 1rem;
+}
+
+.touchme .gettouch .social {
+    margin-top: 1rem;
+}
+
+.touchme .gettouch .social ul {
+    display: flex;
+}
+
+.touchme .gettouch .social ul li,
+.touchme .gettouch .social ul li a {
+    margin: 0;
+    padding: 0;
+}
+
+.touchme .gettouch .social ul li a {
+    font-family: Metropolis-Medium;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+footer {
+    background-color: #E5E5E5;
+}
+
+.footer {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.footer h1 {
+    font-family: Metropolis-SemiBold;
+}
+
+.footer p {
+    margin: 1rem 0 1rem 0;
+}
