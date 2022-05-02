@@ -97,7 +97,7 @@
     height: 100px;
     position: absolute;
     width: 200px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .slider::after {
@@ -222,6 +222,7 @@ p {
 }
 
 .projects img {
+    cursor: pointer;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -346,4 +347,57 @@ footer {
 
 .footer p {
     margin: 1rem 0 1rem 0;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: none;
+}
+
+.popup .content {
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(0, 0) scale(0);
+    background: #fff;
+    width: 80%;
+    height: 80%;
+    z-index: 3;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(0, 0) scale(1);
 }
