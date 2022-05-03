@@ -5,8 +5,6 @@ Portifólio feito utilizando Figma, HTML, CSS e JavaScript.
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
-
 - [HTML5] - Linguagem de marcação para web
 - [CSS3] - Linguagem de estilos para web
 - [markdown-it] - Analisador de Markdown
